@@ -5,13 +5,13 @@
             <!-- <h2>重点设备保障管理系统</h2> -->
             <i-form ref="loginForm" :model="model" :rules="rules" @submit.prevent>
                 <i-form-item class="login-item" prop="username">
-                    <i-icon type="md-person icon-people" />
+                    <i-icon class="icon-people" type="md-person" />
                     <i-input class="login-input" type="text" v-model="model.username" placeholder="用户名"></i-input>
                 </i-form-item>
                 <i-form-item class="login-item" prop="password">
-                    <i-icon type="md-lock icon-lock" />
+                    <i-icon class="icon-lock" type="md-lock" />
                     <i-input class="login-input" :type="passwordType" v-model="model.password" placeholder="密码"></i-input>
-                    <i-icon :type="showPassword ? 'md-eye-off' : 'md-eye'" @click="showPassword = !showPassword" />
+                    <i-icon class="eye" :type="showPassword ? 'md-eye-off' : 'md-eye'" @click="showPassword = !showPassword" />
                 </i-form-item>
                 <i-form-item>
                     <i-button class="login-btn" :loading="isHandling" type="primary" @click="onSubmit" long>
