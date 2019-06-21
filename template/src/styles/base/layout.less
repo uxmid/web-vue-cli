@@ -1,0 +1,61 @@
+/*!
+ * Authors:
+ *      jason <jasonsoop@gmail.com>
+ * 
+ * Copyright (C) 2018-present O&M Cloud Inc. All rights reserved. 
+ */
+
+/* ============================== 布局(Layout) =========================== */
+
+.layout
+{
+    &,
+    &-context,
+    &-generic
+    {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    &-context
+    {
+        flex: auto;
+    }
+
+    &-generic
+    {
+        position: relative;
+    }
+
+    &-generic-content
+    {   
+        position: relative;
+        flex: auto;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        background: @bg-body; // #ffffff;
+    }
+
+    .fade-enter-active,
+    .fade-leave-active 
+    {
+        transition: opacity .3s;
+    }
+
+    .fade-enter,
+    .fade-leave-active 
+    {
+        opacity: 0;
+    }
+    
+    > .iconfont
+    {
+        &:hover
+        {
+            color: #4D76FF;
+        }
+        cursor: pointer;
+        font-size: 26px;
+    }
+}

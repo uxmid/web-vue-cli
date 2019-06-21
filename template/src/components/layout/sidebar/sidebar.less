@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+.layout-sidebar
+{
+    background-color: @white-color;
+
+    /deep/.ivu-layout-sider-trigger,
+    .ivu-menu-dark
+    {
+        background-color: transparent;
+    }
+
+    .iconfont
+    {
+        display: block;
+        font-size: 20px;
+        margin-right: 0;
+        line-height: inherit;
+    }
+
+    &-logo
+    {
+        vertical-align: middle;
+        font-size: 16px;
+        color: @text-333;
+        text-align: center;
+        padding-top: 50px;
+        cursor: pointer;
+        background-image: url("~assets/logo.png") no-repeat 13px 0px;
+    }
+
+    .ivu-menu-vertical
+    {
+
+        .ivu-menu-item
+        {
+            padding-left: 0;
+            padding-right: 0;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        &.ivu-menu-light:after
+        {
+            width: 0;
+        }
+    }
+    .ivu-menu-light.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu)
+    {
+        color: @link-color;
+        background-color: @bg-main;
+
+        &::after
+        {
+            right: unset;
+            left: 0;
+        }
+    }
+}
