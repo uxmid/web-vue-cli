@@ -1,3 +1,7 @@
+<%_ if (options.surportIE) { _%>
+// 支持IE
+import "@babel/polyfill";
+<%_ } _%>
 import flagwind from "flagwind-core";
 import ApplicationContext from "./application/context";
 

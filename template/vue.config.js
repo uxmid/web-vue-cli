@@ -9,8 +9,12 @@ const resolve = function(dir)
 
 module.exports =
 {
-    publicPath: process.env.NODE_ENV === "production" ? process.env.OSS_DOMAIN + "wayto.saasx.oboa.web/" : "/",
+    publicPath: <%_ if (options.aliyuOSS) { _%> 
+ process.env.NODE_ENV === "production" ? process.env.OSS_DOMAIN + process.env.npm_package_name + "/" : "/" <%_ } else { _%> "/"<%_ } _%>,
     productionSourceMap: false,
+    <%_ if (options.surportIE) { _%>
+    transpileDependencies: ["camelcase"],
+    <%_ } _%>
     configureWebpack: config =>
     {
 
@@ -73,7 +77,8 @@ module.exports =
                 // dll文件位置
                 filepath: resolve("public/static/vendor/*.js"),
                 // dll 引用路径
-                publicPath: process.env.OSS_DOMAIN ? process.env.OSS_DOMAIN + "static/vendor" : "/static/vendor",
+                publicPath: <%_ if (options.aliyuOSS) { _%> 
+ process.env.NODE_ENV === "production" ? process.env.OSS_DOMAIN + "static/vendor" : "/static/vendor" <%_ } else { _%> "/static/vendor" <%_ } _%>,
                 // dll最终输出的目录
                 outputPath: "/static/vendor"
             })
@@ -121,19 +126,6 @@ module.exports =
                 .loader("url-loader")
                 .end();
     },
-    // css:
-    // {
-    //     loaderOptions:
-    //     {
-    //         // 给 sass-loader 传递选项
-    //         less:
-    //         {
-    //             // @/ 是 src/ 的别名
-    //             // 所以这里假设你有 `src/variables.scss` 这个文件
-    //             resources: [path.resolve(__dirname, "src/styles/index.less")]
-    //         }
-    //     }
-    // },
     pluginOptions:
     {
         // 配置less全局变量。

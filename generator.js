@@ -36,6 +36,26 @@ module.exports = (api, options, rootOptions) =>
         }
     });
 
+    if(options.aliyuOSS)
+    {
+        api.extendPackage({
+            devDependencies:
+            {
+                "webpack-aliyun-oss-plugin": "^2.1.0",
+            }
+        });
+    }
+    
+    if(options.surportIE)
+    {
+        api.extendPackage({
+            devDependencies:
+            {
+                "@babel/polyfill": "^7.4.4",
+            }
+        });
+    }
+    
     if(options.echarts)
     {
         api.extendPackage({

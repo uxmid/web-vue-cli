@@ -247,7 +247,8 @@ export function downloadExcel(file: Blob, disposition: string): void
 
     const blob = new Blob([file], {type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=utf-8"}),
         reader = new FileReader();
-    let filename = disposition.match(/(?<=")([^:]+)(?=")/g)[0];
+    let dispositions = disposition.match(/\"(.*?)\"/g),
+        filename = dispositions && dispositions.length > 0 && dispositions[0].replace(/\"/g, "");
 
     reader.readAsDataURL(blob);
     reader.onload = (e: any) =>

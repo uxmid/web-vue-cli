@@ -39,5 +39,17 @@ module.exports =
             { name: "openlayer", value: "openlayer" },
             { name: "不使用", value: "none" },
         ]
+    },
+    {
+        name: "aliyuOSS",
+        type: "confirm",
+        message: "是否静态资源上传阿里云？",
+        default: true
+    },
+    {
+        name: "surportIE",
+        type: "confirm",
+        message: "是否需要支持IE？",
+        default: false
     }
 ]
