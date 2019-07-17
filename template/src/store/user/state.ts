@@ -5,7 +5,6 @@
  * Copyright (C) 2010-present Flagwind Inc. All rights reserved. 
  */
 
-import flagwind from "flagwind-core";
 import { IUserProfile } from "models/account";
 
 export default class State

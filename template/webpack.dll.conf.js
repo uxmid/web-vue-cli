@@ -9,7 +9,7 @@ module.exports =
         
         flagwind:
         [
-            "flagwind-core"
+            "uxmid-core"
         ],
         vendor:
         [

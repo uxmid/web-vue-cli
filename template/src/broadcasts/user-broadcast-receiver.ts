@@ -5,10 +5,7 @@
  * Copyright (C) 2010-present Flagwind Inc. All rights reserved. 
  */
 
-import flagwind from "flagwind-core";
-import receivable = flagwind.receivable;
-import BroadcastContext = flagwind.BroadcastContext;
-import IBroadcastReceiver = flagwind.IBroadcastReceiver;
+import { Receivable, BroadcastContext, IBroadcastReceiver } from "uxmid-core";
 import Router, { Route } from "vue-router";
 import { Store } from "vuex";
 import { UserService } from "services/index";
@@ -20,10 +17,10 @@ import broadcasts from "config/broadcasts";
  * @class
  * @version 1.0.0
  */
-@receivable(broadcasts.USER_LOGOUT)
-@receivable(broadcasts.USER_SESSION_LOST)
-@receivable(broadcasts.USER_CREDENTIAL_INVALID)
-@receivable(broadcasts.USER_UNAUTHORIZED)
+@Receivable(broadcasts.USER_LOGOUT)
+@Receivable(broadcasts.USER_SESSION_LOST)
+@Receivable(broadcasts.USER_CREDENTIAL_INVALID)
+@Receivable(broadcasts.USER_UNAUTHORIZED)
 export default class UserBroadcastReceiver implements IBroadcastReceiver
 {
     private _userService: UserService;                      // 用户服务

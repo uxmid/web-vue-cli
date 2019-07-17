@@ -5,8 +5,7 @@
  * Copyright (C) 2010-present Flagwind Inc. All rights reserved. 
  */
 
-import flagwind from "flagwind-core";
-import Type = flagwind.Type;
+import { Type } from "uxmid-core";
 import { Getter, GetterTree } from "vuex";
 import { ApplicationContext } from "src/application/index";
 import { IUserProfile, ICredential } from "models/account";

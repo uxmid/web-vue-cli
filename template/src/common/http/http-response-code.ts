@@ -5,8 +5,7 @@
  * Copyright (C) 2010-present Flagwind Inc. All rights reserved. 
  */
 
-import flagwind from "flagwind-core";
-import Type = flagwind.Type;
+import { Type } from "uxmid-core";
 
 /**
  * 表示一个 Http请求响应状态码。

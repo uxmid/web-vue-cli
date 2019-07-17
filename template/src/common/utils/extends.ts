@@ -5,8 +5,7 @@
  * Copyright (C) 2018-present O&M Cloud Inc. All rights reserved. 
  */
 
-import flagwind from "flagwind-core";
-const Type = flagwind.Type;
+import { Type } from "uxmid-core";
 import { IFilterItem } from "models";
 import dayjs from "dayjs";
 
