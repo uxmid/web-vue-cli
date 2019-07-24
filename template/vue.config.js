@@ -7,10 +7,12 @@ const resolve = function(dir)
     return path.join(__dirname, dir)
 }
 
+const isProd = process.env.NODE_ENV === "production";
+
 module.exports =
 {
     publicPath: <%_ if (options.aliyuOSS) { _%> 
- process.env.NODE_ENV === "production" ? process.env.OSS_DOMAIN + process.env.npm_package_name + "/" : "/" <%_ } else { _%> "/"<%_ } _%>,
+ isProd ? (process.env.OSS_DOMAIN + process.env.npm_package_name + "/") : "/" <%_ } else { _%> "/"<%_ } _%>,
     productionSourceMap: false,
     <%_ if (options.surportIE) { _%>
     transpileDependencies: ["camelcase"],
@@ -78,7 +80,7 @@ module.exports =
                 filepath: resolve("public/static/vendor/*.js"),
                 // dll 引用路径
                 publicPath: <%_ if (options.aliyuOSS) { _%> 
- process.env.NODE_ENV === "production" ? process.env.OSS_DOMAIN + "static/vendor" : "/static/vendor" <%_ } else { _%> "/static/vendor" <%_ } _%>,
+ isProd ? (process.env.OSS_DOMAIN + process.env.npm_package_name + "/static/vendor") : "/static/vendor" <%_ } else { _%> "/static/vendor" <%_ } _%>,
                 // dll最终输出的目录
                 outputPath: "/static/vendor"
             })
