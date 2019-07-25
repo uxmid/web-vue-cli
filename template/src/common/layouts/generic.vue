@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts">
-import { component, Component } from "flagwind-web";
+import { component, Component } from "uxmid-web";
 import Sidebar from "components/layout/sidebar";
 
 /**

@@ -30,7 +30,7 @@ import broadcasts from "config/broadcasts";
 import "../broadcasts";
 
 // 导入系统组件
-import components from "flagwind-web";
+import components from "uxmid-web";
 
 // 导入应用组件
 import MainLayout from "layouts/main.vue";
@@ -55,7 +55,7 @@ import "dayjs/locale/zh-cn";
 import relativeTime from "dayjs/plugin/relativeTime";
 
 // 导入全局样式
-import "flagwind-web/dist/styles/flagwind.css";
+import "uxmid-web/dist/styles/uxmid.css";
 import "iview/dist/styles/iview.css";
 
 <%_ if (options.map === "openlayer") { _%>

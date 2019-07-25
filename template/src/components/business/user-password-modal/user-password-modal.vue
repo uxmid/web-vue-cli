@@ -23,7 +23,7 @@
 
 <script lang="ts">
 import { Form } from "@iview/index";
-import { component, config, watch, View } from "flagwind-web";
+import { component, config, watch, View } from "uxmid-web";
 import { IPasswordModel } from "models/index";
 import { formatString } from "common/utils/extends";
 import { UserService } from "services/index";

@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-import { component, View } from "flagwind-web";
+import { component, View } from "uxmid-web";
 
 @component
 export default class TemplateView extends View {}

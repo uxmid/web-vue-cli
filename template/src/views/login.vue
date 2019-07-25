@@ -26,7 +26,7 @@
 
 <script lang="ts">
 import { Form } from "iview";
-import { component, View } from "flagwind-web";
+import { component, View } from "uxmid-web";
 import { ILoginModel } from "src/models";
 import { UserService } from "services/index";
 import globalConfig from "common/config/global";
