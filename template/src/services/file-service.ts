@@ -5,11 +5,11 @@
  * Copyright (C) 2018-2018 O&M Cloud Inc. All rights reserved. 
  */
 
-import { injectable } from "uxmid-core";
+import { Injectable } from "uxmid-core";
 import ServiceBase from "./service-base";
 import IHttpResponse from "src/common/http/http-response";
 
-@injectable()
+@Injectable()
 export default class FileService extends ServiceBase
 {
     /**

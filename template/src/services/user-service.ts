@@ -5,7 +5,7 @@
  * Copyright (C) 2017-present Wayto Inc. All rights reserved.
  */
 
-import { injectable } from "uxmid-core";
+import { Injectable } from "uxmid-core";
 import ServiceBase from "./service-base";
 import { ICredential, ILoginModel, IFilterModel, IUserProfile } from "src/models";
 
@@ -14,7 +14,7 @@ import { ICredential, ILoginModel, IFilterModel, IUserProfile } from "src/models
  * @class
  * @version 1.0.0
  */
-@injectable()
+@Injectable()
 export default class UserService extends ServiceBase
 {
     public async login(model: ILoginModel): Promise<void>
