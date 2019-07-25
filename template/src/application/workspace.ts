@@ -7,8 +7,7 @@
 
 import Vue, { CreateElement } from "vue";
 
-import flagwind from "flagwind-core";
-import IWorkbench = flagwind.IWorkbench;
+import { IWorkbench } from "uxmid-core";
 import ApplicationContext from "./context";
 
 /**

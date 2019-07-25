@@ -5,10 +5,7 @@
  * Copyright (C) 2010-present Flagwind Inc. All rights reserved. 
  */
 
-import flagwind from "flagwind-core";
-import Type = flagwind.Type;
-import Broadcast = flagwind.Broadcast;
-import BroadcastManager = flagwind.BroadcastManager;
+import { Type, Broadcast, BroadcastManager } from "uxmid-core";
 import { Mutation, MutationTree } from "vuex";
 import { ApplicationContext } from "src/application/index";
 import { IUserProfile, ICredential } from "models/account";

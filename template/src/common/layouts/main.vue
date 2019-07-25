@@ -13,9 +13,7 @@
 
 <script lang="ts">
 import { component, Component } from "flagwind-web";
-import flagwind from "flagwind-core";
-import Broadcast = flagwind.Broadcast;
-import BroadcastManager = flagwind.BroadcastManager;
+import { Broadcast, BroadcastManager } from "uxmid-core";
 import broadcasts from "config/broadcasts";
 import { IUserProfile } from "models";
 import Header from "components/layout/header";

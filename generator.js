@@ -15,7 +15,7 @@ module.exports = (api, options, rootOptions) =>
         },
         dependencies:
         {
-            "flagwind-core": "^1.1.0",
+            "uxmid-core": "^1.0.1",
             "flagwind-web": "^1.0.9",
             "md5": "^2.2.1",
             "iview": "^3.4.1",

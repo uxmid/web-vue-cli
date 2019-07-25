@@ -5,8 +5,7 @@
  * Copyright (C) 2017-present Wayto Inc. All rights reserved.
  */
 
-import flagwind from "flagwind-core";
-import injectable = flagwind.injectable;
+import { injectable } from "uxmid-core";
 import ServiceBase from "./service-base";
 import { ICredential, ILoginModel, IFilterModel, IUserProfile } from "src/models";
 

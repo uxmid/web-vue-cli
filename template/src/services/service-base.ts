@@ -5,7 +5,7 @@
  * Copyright (C) 2018-present O&M Cloud Inc. All rights reserved. 
  */
 
-import flagwind from "flagwind-core";
+import { Application } from "uxmid-core";
 import { Store } from "vuex";
 import { ICredential } from "models/index";
 import { ApplicationContext } from "../application/index";
@@ -63,7 +63,7 @@ export default abstract class ServiceBase
      */
     protected get applicationContext(): ApplicationContext
     {
-        return flagwind.Application.context as ApplicationContext;
+        return Application.context as ApplicationContext;
     }
 
     /**

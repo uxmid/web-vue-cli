@@ -75,9 +75,7 @@
 
 <script lang="ts">
 import { Form } from "@iview/index";
-import flagwind from "flagwind-core";
-import EnumEntry = flagwind.EnumEntry;
-import EnumUtils = flagwind.EnumUtils;
+import { EnumEntry, EnumUtils } from "uxmid-core";
 import { component, config, watch, View } from "flagwind-web";
 import { IUserProfile } from "models/index";
 import { USER_GENDER } from "enums";

@@ -5,9 +5,7 @@
  * Copyright (C) 2010-present Flagwind Inc. All rights reserved. 
  */
 
-import flagwind from "flagwind-core";
-import Type = flagwind.Type;
-import Logger = flagwind.Logger;
+import { Type, Logger } from "uxmid-core";
 import { config, component, Component } from "flagwind-web";
 import { ISearchModel, IPagingResult, IFilterModel, IFilter } from "models/index";
 import { encodeFilterValue, decodeFilterValue } from "common/utils/extends";

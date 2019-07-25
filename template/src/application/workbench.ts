@@ -5,16 +5,10 @@
  * Copyright (C) 2018-present O&M Cloud Inc. All rights reserved. 
  */
 
-import flagwind from "flagwind-core";
-import WorkbenchBase = flagwind.WorkbenchBase;
-import ApplicationContextBase = flagwind.ApplicationContextBase;
-import Broadcast = flagwind.Broadcast;
-import BroadcastManager = flagwind.BroadcastManager;
+import { WorkbenchBase, ApplicationContextBase, Broadcast, BroadcastManager, Logger, ConsoleLogHandler } from "uxmid-core";
+
 import ApplicationContext from "./context";
 import Workspace from "./workspace";
-
-import Logger = flagwind.Logger;
-import ConsoleLogHandler = flagwind.ConsoleLogHandler;
 
 import Vue from "vue";
 import Router from "vue-router";

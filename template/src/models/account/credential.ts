@@ -5,7 +5,7 @@
  * Copyright (C) 2018-present O&M Cloud Inc. All rights reserved. 
  */
 
-import flagwind from "flagwind-core";
+import { ICredential } from "uxmid-core";
 import IUserProfile from "./user-profile";
 
 /**
@@ -13,7 +13,7 @@ import IUserProfile from "./user-profile";
  * @interface
  * @version 1.0.0
  */
-export default interface ICredential extends flagwind.ICredential
+export default interface ICredential extends ICredential
 {
     /**
      * 获取安全凭证对应的用户对象。

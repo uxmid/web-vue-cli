@@ -8,12 +8,7 @@
 import md5 from "md5";
 import qs from "qs";
 import camelcase from "camelcase";
-import flagwind from "flagwind-core";
-import ISet = flagwind.ISet;
-import Set = flagwind.Set;
-import Type = flagwind.Type;
-import Logger = flagwind.Logger;
-import EnumUtils = flagwind.EnumUtils;
+import { ISet, Set, Type, Logger, EnumUtils, InvalidOperationException } from "uxmid-core";
 
 import { ApplicationContext } from "../../application";
 
@@ -21,7 +16,6 @@ import IHttpRequest from "./http-request";
 import IHttpResponse from "./http-response";
 import HttpResponseCode from "./http-response-code";
 
-import InvalidOperationException = flagwind.InvalidOperationException;
 import Axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
 
 import { globalConfig } from "config/index";

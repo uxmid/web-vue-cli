@@ -5,8 +5,7 @@
  * Copyright (C) 2018-2018 O&M Cloud Inc. All rights reserved. 
  */
 
-import flagwind from "flagwind-core";
-import injectable = flagwind.injectable;
+import { injectable } from "uxmid-core";
 import ServiceBase from "./service-base";
 import IHttpResponse from "src/common/http/http-response";
 

@@ -2,8 +2,7 @@ import API from "./urls";
 import HttpClient from "common/http/http-client";
 import IHttpResponse from "../common/http/http-response";
 import IHttpRequest from "common/http/http-request";
-import flagwind from "flagwind-core";
-import ArgumentException = flagwind.ArgumentException;
+import { ArgumentException } from "uxmid-core";
 
 /**
  * 发送ajax请求
