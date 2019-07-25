@@ -21,7 +21,7 @@
 </template>
 
 <script lang="ts">
-import { component, View, config } from "flagwind-web";
+import { component, View, config } from "uxmid-web";
 
 @component
 export default class InfoPanel extends View

@@ -5,7 +5,7 @@
  * Copyright (C) 2018-present O&M Cloud Inc. All rights reserved. 
  */
 
-import { component, Component } from "flagwind-web";
+import { component, Component } from "uxmid-web";
 import ServiceBase from "services/service-base";
 import { ISearchModel, IFilter } from "models/index";
 

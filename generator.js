@@ -1,4 +1,5 @@
 const fs = require("fs");
+const exec = require('child_process').execSync;
 
 module.exports = (api, options, rootOptions) =>
 {
@@ -16,7 +17,7 @@ module.exports = (api, options, rootOptions) =>
         dependencies:
         {
             "uxmid-core": "^1.0.1",
-            "flagwind-web": "^1.0.9",
+            "uxmid-web": "^1.0.0",
             "md5": "^2.2.1",
             "iview": "^3.4.1",
             "axios": "^0.18.0",

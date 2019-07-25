@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { component, View, config, watch } from "flagwind-web";
+import { component, View, config, watch } from "uxmid-web";
 
 @component
 export default class Consoles extends View

@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts">
-import { component, View } from "flagwind-web";
+import { component, View } from "uxmid-web";
 
 /**
  * 错误 404 视图。

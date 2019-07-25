@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts">
-import { component, Component, watch } from "flagwind-web";
+import { component, Component, watch } from "uxmid-web";
 
 import permissionCodes from "utils/permissions-code";
 import index from "src/components";

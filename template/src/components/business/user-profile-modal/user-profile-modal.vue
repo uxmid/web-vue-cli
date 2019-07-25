@@ -76,7 +76,7 @@
 <script lang="ts">
 import { Form } from "@iview/index";
 import { EnumEntry, EnumUtils } from "uxmid-core";
-import { component, config, watch, View } from "flagwind-web";
+import { component, config, watch, View } from "uxmid-web";
 import { IUserProfile } from "models/index";
 import { USER_GENDER } from "enums";
 import { formatString } from "common/utils/extends";

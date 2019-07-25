@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts">
-import { component, Component } from "flagwind-web";
+import { component, Component } from "uxmid-web";
 import { Broadcast, BroadcastManager } from "uxmid-core";
 import broadcasts from "config/broadcasts";
 import { IUserProfile } from "models";

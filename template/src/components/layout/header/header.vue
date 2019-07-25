@@ -39,7 +39,7 @@
 
 <script lang="ts">
 import { IUserProfile } from "models/index";
-import { component, config, Component } from "flagwind-web";
+import { component, config, Component } from "uxmid-web";
 
 const isDebug = process.env.NODE_ENV === "development";
 

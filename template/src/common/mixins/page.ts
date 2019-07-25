@@ -6,7 +6,7 @@
  */
 
 import { Type, Logger } from "uxmid-core";
-import { config, component, Component } from "flagwind-web";
+import { config, component, Component } from "uxmid-web";
 import { ISearchModel, IPagingResult, IFilterModel, IFilter } from "models/index";
 import { encodeFilterValue, decodeFilterValue } from "common/utils/extends";
 import { globalConfig } from "config/index";

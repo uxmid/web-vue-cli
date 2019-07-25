@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { component, View, mixins } from "flagwind-web";
+import { component, View, mixins } from "uxmid-web";
 
 @component
 export default class AdminTemplate extends View
@@ -13,6 +13,6 @@ export default class AdminTemplate extends View
 </script>
 
 <style>
-    /* @import "~flagwind-web/dist/styles/flagwind.css"; */
+    /* @import "~uxmid-web/dist/styles/flagwind.css"; */
     /* @import "~iview/dist/styles/iview.css"; */
 </style>
