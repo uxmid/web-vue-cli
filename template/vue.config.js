@@ -115,8 +115,8 @@ module.exports =
         config.plugin("fork-ts-checker").tap(options =>
         {
             return [{
-                ...options,
-                reportFiles: ["src/**/*.{ts, tsx, vue}"]
+                ...options[0],
+                reportFiles: ["src/**/*.{ts,tsx,vue}"]
             }]
         });
 
